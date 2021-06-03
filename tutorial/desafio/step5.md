@@ -22,6 +22,6 @@ A Aplicação foi desenvolvida em Angular versão 12.0.2.
 
 `docker run -p 5000:80 --name front-desafio -d image-front-desafio:1.0.0`{{execute}}
 
-5. Acessar o endereço http://localhost:5000/ para validar a aplicação.
+5. Acessar o endereço https://[[HOST_SUBDOMAIN]]-5000-[[KATACODA_HOST]].environments.katacoda.com/ para validar a aplicação.
 
 

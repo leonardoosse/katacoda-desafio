@@ -16,5 +16,5 @@ A API foi desenvolvida em .Net Core 3.1.
 
 `docker run -p 8081:5002 --name api-cotacao -d image-api-cotacao:1.0.0`{{execute}}
 
-4. Acessar o endereço http://localhost:8081/conversao para verificar se a API está em execução.
+4. Acessar o endereço https://[[HOST_SUBDOMAIN]]-8081-[[KATACODA_HOST]].environments.katacoda.com/conversao para verificar se a API está em execução.
 

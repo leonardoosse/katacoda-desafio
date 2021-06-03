@@ -32,7 +32,7 @@ A API foi desenvolvida em .Net Core 3.1.
 
 `docker run -p 8080:5001 --name api-segmento -d image-api-segmento:1.0.0`{{execute}}
 
-7. Acessar o endereço http://localhost:8080/segmentos para validar a aplicação.
+7. Acessar o endereço https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/segmentos para validar API.
 
 
 
