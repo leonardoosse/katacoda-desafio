@@ -25,4 +25,4 @@ Para atender a solicitação, foram criadas:
 
 ### Desenho
 
-![](../assets/desenho.png)
+![](desenho.png)
