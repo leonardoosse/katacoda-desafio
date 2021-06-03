@@ -5,19 +5,19 @@
       "steps": [
         {
           "title": "Step 1 - API Cotação",
-          "text": "step3.md"
+          "text": "step1.md"
         },
         {
           "title": "Step 2 - API Segmento",
-          "text": "step4.md"
+          "text": "step2.md"
         },
         {
             "title": "Step 3 - FrontEnd Desafio",
-            "text": "step5.md"
+            "text": "step3.md"
         },
         {
             "title": "Step 4 - Limpar Ambiente",
-            "text": "step6.md"
+            "text": "step4.md"
         }                
       ],
       "intro": {
