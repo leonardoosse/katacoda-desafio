@@ -1,0 +1,44 @@
+{
+    "title": "Desafio ITAU",
+    "description": "Tutorial para validação",
+    "details": {
+      "steps": [
+        {
+          "title": "Step 1 - Baixar Aplicações",
+          "text": "step1.md"
+        },
+        {
+          "title": "Step 2 - BD Desafio",
+          "text": "step2.md"
+        },
+        {
+          "title": "Step 3 - API Cotação",
+          "text": "step3.md"
+        },
+        {
+          "title": "Step 4 - API Segmento",
+          "text": "step4.md"
+        },
+        {
+            "title": "Step 5 - FrontEnd Desafio",
+            "text": "step5.md"
+        },
+        {
+            "title": "Step 6 - Limpar Ambiente",
+            "text": "step6.md"
+        }                
+      ],
+      "intro": {
+        "text": "intro.md"
+      },
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "environment": {
+      "uilayout": "editor-terminal"
+    },
+    "backend": {
+      "imageid": "docker"
+    }
+  }
