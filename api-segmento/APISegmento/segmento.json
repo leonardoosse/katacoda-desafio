@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "nome": "Varejo",
+    "taxa": 0.1
+  },
+  {
+    "id": 2,
+    "nome": "Personnalite",
+    "taxa": 0.2
+  },
+  {
+    "id": 3,
+    "nome": "Private",
+    "taxa": 0.6
+  }
+]

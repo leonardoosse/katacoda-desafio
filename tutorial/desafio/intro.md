@@ -22,7 +22,3 @@ Para atender a solicitação, foram criadas:
 * 1 Aplicação FrontEnd - .NetCore 3.1
 * 2 APIs - Angular 12
 * 1 Banco de Dados - MSQLServer
-
-### Desenho
-
-![](desenho.png)

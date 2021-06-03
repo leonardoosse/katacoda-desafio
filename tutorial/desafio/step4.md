@@ -1,38 +1,40 @@
-# API Segmento api-segmento
+# Finalizando
 
-API para consultar e parametrizar a taxa do segmento do cliente.
+Após encerrar a validação, vamos limpar o ambiente
 
-A API foi desenvolvida em .Net Core 3.1.
+## Parando o Banco de Dados
 
-1. Acessar o diretório da API .
+Após realizar os testes no Banco de Dados, executar os passos abaixo:
 
-`cd ~/desafio-temp/desafio-itau/api-segmento`{{execute}}
+1. Excluir o diretório das aplicações
 
-2. Informar a senha do usuário da aplicação definida na criação do banco de Dados
+`sudo rm -r ~/desafio-itau`{{execute}}
 
-`USER_PASSWORD=FRzs@58OiTF`{{execute}}
+2. Parar o contêiner  
 
-3. Atualizar a connectionString para o IP local e a senha do usuário da aplicação.
+`docker stop api-cotacao`{{execute}}
 
-`ipLocal=$(hostname -I | awk '{print $1}') && echo $ipLocal`{{execute}}
+`docker stop front-desafio`{{execute}}
 
-`conexao=$(echo "Server=$ipLocal,1433;Database=desafio_itau;Uid=user_desafio;Pwd=$USER_PASSWORD" | base64)`{{execute}}
+`docker stop api-segmento`{{execute}}
 
-`jq ".ConnectionStrings.ConexaoDesafioItau = \"$conexao\"" APISegmento/appsettings.json > tmp.$$.json && mv tmp.$$.json APISegmento/appsettings.json`{{execute}}
+3. Remover o contêiner  
 
-4. Gerar a imagem 
+`docker rm api-cotacao`{{execute}}
 
-`docker build -t image-api-segmento:1.0.0 -f Dockerfile . `{{execute}}
+`docker rm api-segmento`{{execute}}
 
-5. Se desejar, subir a imagem em um repositório (DockerHub, ECR, ACR)
+`docker rm front-desafio`{{execute}}
 
-`docker push image-api-segmento:1.0.0`{{execute}}
+`docker container prune -f`{{execute}}
 
-6. Criar o contêiner a partir da imagem gerada. 
+4. Remover a imagem  
 
-`docker run -p 8080:5001 --name api-segmento -d image-api-segmento:1.0.0`{{execute}}
+`docker rmi image-api-cotacao:1.0.0 -f`{{execute}}
 
-7. Acessar o endereço https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/segmentos para validar API.
+`docker rmi image-api-segmento:1.0.0 -f`{{execute}}
 
+`docker rmi image-front-desafio:1.0.0 -f`{{execute}}
 
+`docker image prune -f`{{execute}}
 
